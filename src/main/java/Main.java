@@ -13,5 +13,5 @@ public class Main {
             } else {
                 System.out.println("Допустимы только римские и арабские числа");
             }
-        }
+    }
 }

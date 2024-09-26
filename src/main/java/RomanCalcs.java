@@ -148,6 +148,10 @@ public class RomanCalcs extends Calculations{
                 System.out.print("C");
                 gap = 100;
             }
+            else if(pairOfInt[0] * pairOfInt[1] - 90 == 0){
+                System.out.print("XC");
+                break;
+            }
             else if(pairOfInt[0] * pairOfInt[1] - 50 - gap >= 0){
                 System.out.print("L");
                 gap = 50;
