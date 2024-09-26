@@ -142,7 +142,7 @@ public class RomanCalcs extends Calculations{
 
     @Override
     public void multiplication(int[] pairOfInt) {
-        for(int i = 0; i < pairOfInt[0] * pairOfInt[1]; i += gap){
+        for(int i = 0; i < pairOfInt[0] * pairOfInt[1]; i = gap){
 
             if(pairOfInt[0] * pairOfInt[1] - 100 - gap == 0){
                 System.out.print("C");
@@ -199,15 +199,7 @@ public class RomanCalcs extends Calculations{
     public void division(int[] pairOfInt) {
         for(int i = 0; i < pairOfInt[0] / pairOfInt[1]; i += gap){
 
-            if(pairOfInt[0] / pairOfInt[1] - 100 - gap == 0){
-                System.out.print("C");
-                gap = 100;
-            }
-            else if(pairOfInt[0] / pairOfInt[1] - 50 - gap >= 0){
-                System.out.print("L");
-                gap = 50;
-            }
-            else if(pairOfInt[0] / pairOfInt[1] - 10 - gap >= 0){
+            if(pairOfInt[0] / pairOfInt[1] - 10 - gap >= 0){
                 System.out.print("X");
                 gap += 10;
             }
